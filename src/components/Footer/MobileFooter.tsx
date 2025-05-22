@@ -18,7 +18,7 @@ const MobileFooter = () => {
           <Text className="mb-[19px] text-[18px] font-bold text-white mt-[42px]">
             Social Media Links
           </Text>
-          
+
           <div className="flex gap-6">
             <Image src={x} alt="social icon" />
             <Image src={insta} alt="social icon" />
@@ -26,33 +26,34 @@ const MobileFooter = () => {
           </div>
         </div>
         <div>
-          <Image src={logo} alt="logo" width={230} className="w-[230px] mt-[42px] pl-5" />
+          <Image
+            src={logo}
+            alt="logo"
+            width={230}
+            className="w-[230px] mt-[42px] pl-5"
+          />
         </div>
       </div>
-      <div className="px-5 border-b border-black py-4">
-            <Text className="mb-[19px] text-[18px] font-bold text-white text-left">
-              Contact
-            </Text>
-
-            <div className="flex gap-[20px] items-center">
-              <div className="flex gap-3">
-                <Image src={phone} alt="social icon" />
-                <Text className="text-white text-[14px]">
-                  Tel.: +123-45678910
-                </Text>
-              </div>
-              <div className="flex gap-3">
-                <Image src={mail} alt="social icon" />
-                <Text className="text-white text-[14px]">
-                  specdrop@gmail.com
-                </Text>
-              </div>
-            </div>
-          </div>
-
-          <Text className="text-center text-[16px] text-white mt-[18px] md:mb-0 pb-[18px]">
-          © 2025 SpecDrop. All Rights Reserved
+      <div className="border-b border-black py-4">
+        <Text className="mb-[19px] px-5 text-[18px] font-bold text-white text-left">
+          Contact
         </Text>
+
+        <div className="flex gap-[20px] flex-wrap items-center px-5">
+          <div className="flex gap-3">
+            <Image src={phone} alt="social icon" />
+            <Text className="text-white text-[14px]">Tel.: +123-45678910</Text>
+          </div>
+          <div className="flex gap-3">
+            <Image src={mail} alt="social icon" />
+            <Text className="text-white text-[14px]">specdrop @gmail.com</Text>
+          </div>
+        </div>
+      </div>
+
+      <Text className="text-center text-[16px] text-white mt-[18px] md:mb-0 pb-[18px]">
+        © 2025 SpecDrop. All Rights Reserved
+      </Text>
     </div>
   );
 };

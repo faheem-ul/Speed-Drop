@@ -51,12 +51,12 @@ const RequestForm = () => {
                 className="md:text-[28px] text-[16px] text-left font-semibold">
                 Brand Name
               </Text>
-              <div className="w-full flex justify-between items-center mb-[30px] md:mb-[50px] mt-5">
+              <div className="w-full flex justify-between items-center gap-4 mb-[30px] md:mb-[50px] mt-5">
                 <input
                   type="text"
-                  className="w-full px-[23px] gap-2 max-w-[342px] md:max-w-[1173px] h-[34px] md:h-[73px] bg-[#939598] border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
+                  className="w-full px-[23px] gap-2 max-w-full md:max-w-[1173px] h-[34px] md:h-[73px] bg-[#939598] border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
                 />
-                <div className="md:w-[73px] md:h-[73px] w-[34px] h-[34px] bg-[#1F75BC] rounded-full flex justify-center items-center">
+                <div className="md:w-[73px] md:h-[73px] w-[40px] h-[35px] bg-[#1F75BC] rounded-full flex justify-center items-center">
                   <Image
                     src={plussvg}
                     alt="svg"
@@ -72,12 +72,12 @@ const RequestForm = () => {
                 className="md:text-[28px] text-[16px] text-left font-semibold">
                 Highest priority specification
               </Text>
-              <div className="w-full flex justify-between items-center mb-[30px] md:mb-[50px] mt-5">
+              <div className="w-full flex justify-between gap-4 items-center mb-[30px] md:mb-[50px] mt-5">
                 <input
                   type="text"
-                  className="w-full px-[23px] gap-2 max-w-[342px] md:max-w-[1173px] h-[34px] md:h-[73px] bg-[#939598] border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
+                  className="w-full px-[23px] gap-2 max-w-full md:max-w-[1173px] h-[34px] md:h-[73px] bg-[#939598] border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
                 />
-                <div className="md:w-[73px] md:h-[73px] w-[34px] h-[34px] bg-[#1F75BC] rounded-full flex justify-center items-center">
+                <div className="md:w-[73px] md:h-[73px] w-[40px] h-[35px] bg-[#1F75BC] rounded-full flex justify-center items-center">
                   <Image
                     src={plussvg}
                     alt="svg"
