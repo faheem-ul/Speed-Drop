@@ -1,16 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
+
+import Footer from "@/components/Footer";
+
 import "./globals.css";
+import MobileFooter from "@/components/Footer/MobileFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const digital_geometric = localFont({
+  src: [
+    {
+      path: "../../public/fonts/digital geometric/digital geometric bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    
+  ],
+  variable: "--font-digital_geometric",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${digital_geometric.variable} antialiased`}
       >
         {children}
+        <Footer/>
+        <MobileFooter/>
       </body>
     </html>
   );
