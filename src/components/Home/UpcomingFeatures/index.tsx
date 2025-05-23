@@ -24,7 +24,7 @@ const Upcoming = () => {
                 src={up1}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 CAD model Download
@@ -36,7 +36,7 @@ const Upcoming = () => {
                 src={up2}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 Parts search engine
@@ -48,7 +48,7 @@ const Upcoming = () => {
                 src={up3}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 Built in Filters
@@ -61,7 +61,7 @@ const Upcoming = () => {
                 src={up4}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 Software and License Needed
@@ -74,7 +74,7 @@ const Upcoming = () => {
                 src={up5}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 Specs comparison table
@@ -87,7 +87,7 @@ const Upcoming = () => {
                 src={up6}
                 alt="image"
                 width={430}
-                className="upcoming-shadow"
+                className="upcoming-shadow duration-500 md:hover:scale-110"
               />
               <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
                 Where to buy

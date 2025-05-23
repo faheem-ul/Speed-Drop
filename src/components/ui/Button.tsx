@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
         disabled={loading}
         onClick={onClick}
         className={cn(
-          "w-full flex justify-center font-poppins items-center bg-[#1F75BC] h-[62px] text-[16px] font-normal leading-[23.08px] text-white hover:opacity-85 transition duration-500 ease-in-out",
+          "w-full flex justify-center cursor-pointer font-poppins items-center bg-[#1F75BC] h-[62px] text-[16px] font-normal leading-[23.08px] text-white hover:opacity-85 transition duration-500 ease-in-out",
           className
         )}
       >

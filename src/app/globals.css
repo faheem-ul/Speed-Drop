@@ -44,10 +44,15 @@ body {
   border-radius: 10px;
 }
 
+
 .button-shadow{
   box-shadow: 0px 14px 34px 0px #0000004D;
 }
  
+
+html{
+  scroll-behavior: smooth;
+}
 
 
 

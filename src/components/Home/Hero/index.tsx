@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Text from "@/components/ui/Text";
 import Button from "@/components/ui/Button";
@@ -40,9 +41,11 @@ const Hero = () => {
         </Text>
 
         {/* CTA Button */}
+        <Link href="/#form">
         <Button className="rounded-[30px] w-[86px] md:w-[200px] mx-auto h-[28px] md:h-[61px] font-bold text-[8px] md:text-[18px]">
           Submit Request
         </Button>
+        </Link>
         </div>
       </div>
     </div>
