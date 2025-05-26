@@ -146,7 +146,7 @@ const RequestForm = () => {
               <div className="w-full">
                 <Text
                   as="h2"
-                  className="md:text-[28px] text-[16px] text-left font-semibold">
+                  className="md:text-[28px]  text-[16px] text-left font-semibold">
                   Part Number:
                 </Text>
                 <input
@@ -154,7 +154,7 @@ const RequestForm = () => {
                   required
                   value={partNumber}
                   onChange={(e) => setPartNumber(e.target.value)}
-                  className="w-full border border-b-black border-t-0 border-l-0 border-r-0 font-poppins mb-[30px]  mt-5 focus:outline-none"
+                  className="w-full border border-b-black border-t-0 uppercase border-l-0 border-r-0 font-poppins mb-[30px]  mt-5 focus:outline-none"
                 />
               </div>
             </div>
@@ -162,8 +162,8 @@ const RequestForm = () => {
             <div>
               <Text
                 as="h2"
-                className="md:text-[28px] text-[16px] text-left font-semibold">
-                Brand Name
+                className="md:text-[28px] text-[16px] text-left capitalize font-semibold">
+                Brand Name: <span className="text-[18px] text-[#1F75BC]">(max. 3)</span>
               </Text>
               {brandNames.map((val, i) => (
                 <div
@@ -174,7 +174,7 @@ const RequestForm = () => {
                     required
                     value={val}
                     onChange={(e) => handleChange("brand", i, e.target.value)}
-                    className="w-full px-[23px] max-w-full md:max-w-[1173px] h-[34px] rounded-[15px] md:h-[73px] bg-[#000000]/20 border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
+                    className="w-full px-[23px] max-w-full md:max-w-[1173px] h-[34px] rounded-[15px] md:h-[73px] bg-[#000000]/8 border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
                   />
                   {brandNames.length < 3 && i === brandNames.length - 1 ? (
                     <div
@@ -205,8 +205,8 @@ const RequestForm = () => {
             <div>
               <Text
                 as="h2"
-                className="md:text-[28px] text-[16px] text-left font-semibold">
-                Highest priority specification
+                className="md:text-[28px] text-[16px] text-left font-semibold capitalize">
+                Highest Priority Specs.: <span className="text-[18px] text-[#1F75BC]">(max. 3)</span>
               </Text>
               {specs.map((val, i) => (
                 <div
@@ -217,7 +217,7 @@ const RequestForm = () => {
                     required
                     value={val}
                     onChange={(e) => handleChange("spec", i, e.target.value)}
-                    className="w-full px-[23px] max-w-full md:max-w-[1173px] h-[34px] md:h-[73px] rounded-[15px] bg-[#000000]/20 border border-b-0 border-t-0 border-l-0 border-r-0 font-poppins focus:outline-none"
+                    className="w-full px-[23px] max-w-full md:max-w-[1173px] h-[34px] md:h-[73px] rounded-[15px] bg-[#000000]/8  font-poppins focus:outline-none"
                   />
                   {specs.length < 3 && i === specs.length - 1 ? (
                     <div
@@ -248,7 +248,7 @@ const RequestForm = () => {
             <Text
               as="h2"
               className="md:text-[28px] text-[16px] text-left font-semibold">
-              Notes (Optional)
+              Notes: <span className="text-[18px] text-[#1F75BC]">(Optional)</span>
             </Text>
             <textarea
               value={notes}

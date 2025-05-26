@@ -26,7 +26,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 w-full h-full flex flex-col items-start pt-[38px] md:pt-[83px] max-w-[1313px] mx-auto">
         {/* Logo container */}
-        <div className="md:w-[305px] w-[100px] h-[32px] md:h-[95px] bg-white rounded-[6px] md:rounded-[15px] flex justify-center items-center">
+        <div className="md:w-[305px] w-[100px] h-[32px] md:h-[95px] bg-white rounded-[18px] md:rounded-[118px] flex justify-center items-center">
           <Image src={logo} alt="logo" className="md:w-[236px] w-[76px]" />
         </div>
 
@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* CTA Button */}
         <Link href="/#form">
-        <Button className="rounded-[30px] w-[86px] md:w-[200px] mx-auto h-[28px] md:h-[61px] font-bold text-[8px] md:text-[18px]">
+        <Button className="rounded-[30px] w-[86px] md:w-[200px] mx-auto h-[28px] md:h-[61px] bg-white text-[#1F75BC] font-bold text-[8px] md:text-[18px]">
           Submit Request
         </Button>
         </Link>

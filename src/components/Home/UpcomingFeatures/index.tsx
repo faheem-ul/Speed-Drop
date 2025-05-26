@@ -4,10 +4,10 @@ import Image from "next/image";
 import Text from "@/components/ui/Text";
 
 import up1 from "@/public/images/upcoming1.png";
-import up2 from "@/public/images/upcoming2.png";
-import up3 from "@/public/images/upcoming3.png";
+import up2 from "@/public/images/upcoming2.jpg";
+import up3 from "@/public/images/upcoming3.jpg";
 import up4 from "@/public/images/upcoming4.png";
-import up5 from "@/public/images/upcoming5.png";
+import up5 from "@/public/images/upcoming5.jpg";
 import up6 from "@/public/images/upcoming6.png";
 const Upcoming = () => {
   return (
@@ -26,7 +26,7 @@ const Upcoming = () => {
                 width={430}
                 className="upcoming-shadow duration-500 md:hover:scale-110"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 CAD model Download
               </Text>
             </div>
@@ -36,9 +36,9 @@ const Upcoming = () => {
                 src={up2}
                 alt="image"
                 width={430}
-                className="upcoming-shadow duration-500 md:hover:scale-110"
+                className="upcoming-shadow duration-500 md:hover:scale-110 min-h-[326px] object-cover"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 Parts search engine
               </Text>
             </div>
@@ -48,9 +48,9 @@ const Upcoming = () => {
                 src={up3}
                 alt="image"
                 width={430}
-                className="upcoming-shadow duration-500 md:hover:scale-110"
+                className="upcoming-shadow h-[326px] object-cover duration-500 md:hover:scale-110"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 Built in Filters
               </Text>
             </div>
@@ -63,7 +63,7 @@ const Upcoming = () => {
                 width={430}
                 className="upcoming-shadow duration-500 md:hover:scale-110"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 Software and License Needed
               </Text>
             </div>
@@ -74,9 +74,10 @@ const Upcoming = () => {
                 src={up5}
                 alt="image"
                 width={430}
-                className="upcoming-shadow duration-500 md:hover:scale-110"
+                height={441}
+                className="upcoming-shadow duration-500 md:hover:scale-110 min-h-[341px]"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 Specs comparison table
               </Text>
             </div>
@@ -89,7 +90,7 @@ const Upcoming = () => {
                 width={430}
                 className="upcoming-shadow duration-500 md:hover:scale-110"
               />
-              <Text as="h2" className="md:text-[24px] text-[18px] md:text-center md:mt-[43px] mt-[34px]">
+              <Text as="h2" className="md:text-[24px] text-[18px] capitalize md:text-center md:mt-[43px] mt-[34px]">
                 Where to buy
               </Text>
             </div>

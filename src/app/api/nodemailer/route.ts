@@ -63,15 +63,19 @@ export async function POST(request: NextRequest) {
           <h2 style="color: #0056b3;">Thank You for Your Request!</h2>
           <p>Hi <strong>${name}</strong>,</p>
           
-          <p>Thank you for submitting your part request through <strong>SpecDrop</strong> — we’ve received your message and our team is already working on finding the best possible alternatives for you.</p>
+          <p>Thank you for submitting your part request through <strong>SpecDrop</strong> — we’ve received it and our team is already working on finding the best possible alternatives for you.</p>
           
           <h3 style="color: #0056b3;">What Happens Next:</h3>
           <ul>
             <li><strong>Manual Review:</strong> Our team of engineers will carefully analyze your request and match it with the most suitable alternative parts based on technical specs, availability, and compatibility.</li>
-            <li><strong>Personalized Results:</strong> You’ll receive a tailored response with recommended alternatives within <em>[X business days/hours]</em>.</li>
+            <li><strong>Personalized Results:</strong> You’ll receive a tailored response with recommended alternatives within <em>[2 business days/hours]</em>.</li>
             <li><strong>Expert Insights:</strong> If needed, we may follow up with clarifying questions to ensure we provide the best match.</li>
           </ul>
           
+          <h3 style="color: #0056b3;">Track Your Request</h3>
+
+          <p></p>
+
           <h3 style="color: #0056b3;">Your Unique ID:</h3>
         
            <p id="${uniqueId}">${uniqueId}</p>
@@ -84,9 +88,9 @@ export async function POST(request: NextRequest) {
           
           <br />
           <p>Best regards,</p>
-          <p><strong>The SpecDrop Team</strong><br />
+          <p style="color: #0056b3;><strong>The SpecDrop Team</strong><br />
           <a href="mailto:info@specdrop.com" style="color: #0078D4;">info@specdrop.com</a><br />
-          <a href="https://www.specdrop.com" style="color: #0078D4;">www.specdrop.com</a></p>
+          <a href="https://speed-drop.vercel.app/" style="color: #0078D4;">www.specdrop.com</a></p>
         </div>
       `,
     };
