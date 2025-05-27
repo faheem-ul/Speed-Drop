@@ -16,15 +16,15 @@ export async function POST(request: NextRequest) {
       secure: false, // Must be false for port 587 (TLS)
 
       auth: {
-        user: "a.mustafa@specdrop.com",
-        pass: "ffvdmrfnztfrvsmx",
+        user: "requests@specdrop.com",
+        pass: "kvhhhjzxzdgwnpmg",
       },
     });
 
     // Email options for sending to your own inbox
     const mailOptionToYou = {
-      from: `"${name}" <a.mustafa@specdrop.com>`,
-      to: "a.mustafa@specdrop.com",
+      from: ` <requests@specdrop.com>`,
+      to: "requests@specdrop.com, developer@innovativemojo.com",
       subject: "New Form Submission",
       html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     // Email options for sending thank you email to the user
     //   <a href="[InsertLinkHere]" style="color: #0078D4;"></a>
     const mailOptionToUser = {
-      from: "a.mustafa@specdrop.com",
+      from: "requests@specdrop.com",
       to: email,
       subject: "We Have Received Your Request – SpecDrop",
       html: `

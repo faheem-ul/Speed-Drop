@@ -206,7 +206,7 @@ const RequestForm = () => {
               <Text
                 as="h2"
                 className="md:text-[28px] text-[16px] text-left font-semibold capitalize">
-                Highest Priority Specs.: <span className="text-[18px] text-[#1F75BC]">(max. 3)</span>
+                Highest Priority Specs: <span className="text-[18px] text-[#1F75BC]">(max. 3)</span>
               </Text>
               {specs.map((val, i) => (
                 <div
@@ -279,7 +279,7 @@ const RequestForm = () => {
             </Button>
 
             {responseMessage && (
-              <Text className="text-center mb-4 font-semibold">
+              <Text className="text-center mb-4 mx-auto font-semibold">
                 {responseMessage}
               </Text>
             )}
